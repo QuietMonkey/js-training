@@ -1,4 +1,4 @@
-script: ./tester
+script: ./tester basics
 language: java
 node_js:
   - "node"
