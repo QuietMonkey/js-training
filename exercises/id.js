@@ -7,7 +7,9 @@
  */
 
 // Your code :
-
+function id(prop){
+    return prop
+}
 //* Begin of tests
 const assert = require('assert')
 
