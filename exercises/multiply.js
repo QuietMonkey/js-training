@@ -10,6 +10,58 @@
 
 // Your code :
 
+// function multiply(x, y){
+//     let result = 0
+//     if (x>0 && y>0){
+//         for (let i=0; i< y; i++){
+//             result += x
+//         } 
+//     } else if (x<0 && y<0){
+//         x = -x
+//         y = -y
+//         for (let i=0; i< y; i++){
+//             result += x
+//         } 
+//     } else if (x>0 && y<0){
+//         y= -y
+//         for (let i =0; i<y; i++){
+//             result += x
+            
+            
+//         }
+//     }else if(x<0 && y>0) {
+//         x= +x
+//         for (let i =0; i<y; i++){
+//             result += x
+            
+//         }
+
+//     }else if (x === 0 || y ===0){
+//         result = 0
+//     }
+//     return result
+// }
+
+function multiply(x, y){
+    let result = 0
+    let v = Math.abs(x)
+    let w = Math.abs(y)
+    
+    for (let i =0; i<w; i++){
+        result += v
+    }
+    
+    if (x < 0 && y > 0){
+        result = -result
+    }else if (x > 0 && y < 0){
+        result = -result
+    }
+
+
+    return result
+}
+
+
 //* Begin of tests
 const assert = require('assert')
 
